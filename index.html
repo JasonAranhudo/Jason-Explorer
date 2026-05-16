@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- esse site for feito para ser simples mesmo, provavelmente com o tempo eu posso atualizar -->
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="jason.png" type="image/png">
+    <title>Jason Explorer</title>
+</head>
+<body>
+    <h1 class="tituloH1">Esta é uma biblioteca de cifras, alfabetos, linguas, enigmas e códigos. Procure o que quiser pesquisando aqui!</h1>
+    <input type="text" placeholder="🔍  'ainda não funciona'">
+    <p id="p1">(este site foi feito originalmente para um certo enigma que estou fazendo, e provavelmente o meu professor vai tentar decifra-lo)</p>
+
+    <div class="TituloCifras">* ᑕIᖴᖇᗩS *</div>
+
+    <div class="vigenereDiv">
+        <!-- cifra de Vigenère -->
+        <!-- Neste site a cifra de vigenère começa em 1 ao inves de 0 porque é mais simples-->
+        <h2 class="vigenereTitulo">* Vigenère</h2>
+        <p class="pH2">A cifra de Vigenère funciona mudando a posição das letras de acordo com uma palavra(senha)</p>
+        <p class="pH2">Então vamos pegar cada letra da minha palavra(senha) e vou trocar pelo numero dela no alfabeto</p>
+        <p class="pH2">Logo após isso vamos andar o numero de casas correspondentes a senha na nossa palavra codificada(contamos a quantidade de casas começando da letra original)</p>
+        <p class="pH2">Se a senha não tiver a mesma quantidade de letras que a palavra(sendo mais ou menos letras) iremos cortar a senha ou repetir parte dela.</p>
+        <h3>Exemplo :</h3>
+        <p class="pH2">Palavra: Jason. Senha: Oi. O = 15, I = 9. resultado da senha = 15, 9 (Oi)</p>
+        <p class="pH2">Oi = 2 letras, Jason = 5 letras. logo a senha vira: Oioio = 15, 9, 15, 9, 15</p>
+        <p class="pH2">J+15 = X, A+9 = I, S+15 = G, O+9 = W, N+15 = B. Jason = XISGWB.</p>
+    </div>
+    <div class="cesarDiv">
+
+        <!-- cifra de César -->
+        <h2 class="cesarTitulo">* César</h2>
+        <p class="pH2">A cifra de César funciona mudando a posição das letras nas palavras usando "sifts"(indo um certo numero fixo de casas para esquerda ou para a direita).</p>
+        <h3>Exemplo :</h3>
+        <p class="pH2">Jason + César com shift 6 para direita</p>
+        <p class="pH2">Resposta de Jason com shift 6 é: OFXTS.</p>
+    </div>
+    <div class="atbashDiv">
+
+        <!-- cifra de Atbash-->
+        <h2 class="atbashTitulo">* Atbash</h2>
+        <p class="pH2">A cifra de Atbash funciona trocando a letra da palavra codificada pela letra do alfabeto ao contrario.</p>
+        <h3>Exemplo :</h3>
+        <p class="pH2size25">Alfabeto normal.</p>
+        <p class="pH2size25">A-B-C-D-E-F-G-H-I-J-K-L-M-N-O-P-Q-R-S-T-U-V-W-X-Y-Z</p>
+        <p class="pH2">Igual a...</p>
+        <p class="pH2size25">Alfabeto ao contrario.</p>
+        <p class="pH2size25">Z-Y-X-W-V-U-T-S-R-Q-P-O-N-M-L-K-J-I-H-G-F-E-D-C-B-A</p>
+        <p class="pH2">Então logo, Jason em Atbash fica = Qzhlm.</p>
+    </div>
+
+    <div class="TituloAlfabetos">* 𝘼𝙡𝙛𝙖𝙗𝙚𝙩𝙤𝙨 *</div>
+
+    <div class="morseDiv">
+
+        <h2 class="morseTitulo">* Código morse</h2>
+        <p class="pH2">O código morse funciona mudando as letras do alfabeto por traços ("-") e pontos (".")</p>
+        <p class="pH2">Para usar o código morse é como usar o alfabeto normal, apenas quando for escrever uma palavra deixe um espaço entre uma letra e outra</p>
+        <p class="pH2">E quando terminar uma palavra e começar a próxima adicione um "/".</p>
+        <p class="pH2size25">Alfabeto do código morse abaixo.</p>
+        <img class="ImgMorse" src="CodigoMorse.avif" alt="Alfabeto do código morse">
+        <h3>Exemplo :</h3>
+        <p class="pH2size25">Jason = .--- .- ... --- -.</p>
+        <p class="pH2size25">Sou uma aranha = ... --- ..- / ..- -- .- / .- .-. .- -. .... .-</p>
+    </div>
+    <div class="pigpenDiv">
+
+        <h2 class="pigpenTitulo">* Pigpen🐷</h2>
+        <p class="pH2">O alfabeto Pigpen funciona como o alfabeto normal só mudando a estética do caractere.</p>
+        <img class="ImgPigpen"src="Pigpen.jpg" alt="Alfabeto Pigpen">
+        <h3>Exemplo :</h3>
+        <p class="pH2size25">Jason = ⟓⅃v⟃⊡</p>
+        <p class="pH2size25">Eu sou uma aranha = □< v⟃< <⟄⅃ ⅃⟔⅃⊡⊓⅃</p>
+        <p class="pH2comentario">eu recomendo usar algum site para codificar uma palavra no Pc ou celular.</p>
+        <a class="PigpenLink" href="https://lingojam.com/PigpenCipher">- Decoder Pigpen -</a>
+
+    </div>
+
+    <!-- sempre deixar essa div como ultimo -->
+     <div id="copyright">
+
+    <p>Tambem existem milhares de sites e videos no youtube por exemplo que esplicam e decodificam essas cifras e enigmas.</p>
+    <p>Recomendo bastante um canal em expecifico o nome é Rentune, se puder segue ele lá.</p>
+    <p>foi ele quem me mostrou essa parte do mundo, e por consequencia acabei criando esse site ksksk.</p>
+
+     <a class="linkJason" href="https://www.youtube.com/rentune">- Canal Rentune -</a>
+     <a class="linkJason" href="https://github.com/JasonAranhudo">- Perfil do JasonAranhudo no Github -</a>
+     <a class="linkJason" href="https://www.tiktok.com/@jason_aranhudo">- Perfil do JasonAranhudo no Tiktok -</a>
+     <p>- Pagina feita pelo usuario do Github JasonAranhudo -</p>
+     </div>
+
+</body>
+</html>
