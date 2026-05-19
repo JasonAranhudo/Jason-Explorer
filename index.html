@@ -5,22 +5,32 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="jason.png" type="image/png">
+    <link rel="icon" href="Assets/jason.png" type="image/png">
     <title>Jason Explorer</title>
 </head>
 <body>
+
+    <div id="Site">
+        <button id="botaoMusica" onclick="musicaToggle()">
+            🎵
+            </button>
+            
+            <audio id="musica" loop>
+                <source src="Assets/FrutigerAeroComplete.mp3" type="audio/mpeg">
+            </audio>
+
     <h1 class="tituloH1">Esta é uma biblioteca de cifras, alfabetos, linguas, enigmas e códigos. Procure o que quiser pesquisando aqui!</h1>
     <input type="text" placeholder="🔍  'ainda não funciona'">
     <p id="p1">(este site foi feito originalmente para um certo enigma que estou fazendo, e provavelmente o meu professor vai tentar decifra-lo)</p>
 
-    <div class="TituloCifras">* ᑕIᖴᖇᗩS *</div>
+<h1 class="TituloCifras">* ᑕIᖴᖇᗩS *</h1>
 
     <div class="vigenereDiv">
         <!-- cifra de Vigenère -->
         <!-- Neste site a cifra de vigenère começa em 1 ao inves de 0 porque é mais simples-->
         <h2 class="vigenereTitulo">* Vigenère</h2>
-        <p class="pH2">A cifra de Vigenère funciona mudando a posição das letras de acordo com uma palavra(senha)</p>
-        <p class="pH2">Então vamos pegar cada letra da minha palavra(senha) e vou trocar pelo numero dela no alfabeto</p>
+        <p class="pH2">A cifra de Vigenère funciona mudando a posição das letras de acordo com uma palavra(senha), 
+        então vamos pegar cada letra da minha palavra(senha) e vou trocar pelo numero dela no alfabeto</p>
         <p class="pH2">Logo após isso vamos andar o numero de casas correspondentes a senha na nossa palavra codificada(contamos a quantidade de casas começando da letra original)</p>
         <p class="pH2">Se a senha não tiver a mesma quantidade de letras que a palavra(sendo mais ou menos letras) iremos cortar a senha ou repetir parte dela.</p>
         <h3>Exemplo :</h3>
@@ -34,8 +44,8 @@
         <h2 class="cesarTitulo">* César</h2>
         <p class="pH2">A cifra de César funciona mudando a posição das letras nas palavras usando "sifts"(indo um certo numero fixo de casas para esquerda ou para a direita).</p>
         <h3>Exemplo :</h3>
-        <p class="pH2">Jason + César com shift 6 para direita</p>
-        <p class="pH2">Resposta de Jason com shift 6 é: OFXTS.</p>
+        <p class="pH2size25">Jason + César com shift 6 para direita</p>
+        <p class="pH2size25">Resposta de Jason com shift 6 é: OFXTS.</p>
     </div>
     <div class="atbashDiv">
 
@@ -57,10 +67,10 @@
 
         <h2 class="morseTitulo">* Código morse</h2>
         <p class="pH2">O código morse funciona mudando as letras do alfabeto por traços ("-") e pontos (".")</p>
-        <p class="pH2">Para usar o código morse é como usar o alfabeto normal, apenas quando for escrever uma palavra deixe um espaço entre uma letra e outra</p>
-        <p class="pH2">E quando terminar uma palavra e começar a próxima adicione um "/".</p>
+        <p class="pH2">Para usar o código morse é como usar o alfabeto normal, apenas quando for escrever uma palavra deixe um espaço entre uma letra e outra,
+        e quando terminar uma palavra e começar a próxima adicione um "/".</p>
         <p class="pH2size25">Alfabeto do código morse abaixo.</p>
-        <img class="ImgMorse" src="CodigoMorse.avif" alt="Alfabeto do código morse">
+        <img class="ImgMorse" src="Assets/CodigoMorse.avif" alt="Alfabeto do código morse">
         <h3>Exemplo :</h3>
         <p class="pH2size25">Jason = .--- .- ... --- -.</p>
         <p class="pH2size25">Sou uma aranha = ... --- ..- / ..- -- .- / .- .-. .- -. .... .-</p>
@@ -69,7 +79,7 @@
 
         <h2 class="pigpenTitulo">* Pigpen🐷</h2>
         <p class="pH2">O alfabeto Pigpen funciona como o alfabeto normal só mudando a estética do caractere.</p>
-        <img class="ImgPigpen"src="Pigpen.jpg" alt="Alfabeto Pigpen">
+        <img class="ImgPigpen"src="Assets/Pigpen.jpg" alt="Alfabeto Pigpen">
         <h3>Exemplo :</h3>
         <p class="pH2size25">Jason = ⟓⅃v⟃⊡</p>
         <p class="pH2size25">Eu sou uma aranha = □< v⟃< <⟄⅃ ⅃⟔⅃⊡⊓⅃</p>
@@ -77,19 +87,41 @@
         <a class="PigpenLink" href="https://lingojam.com/PigpenCipher">- Decoder Pigpen -</a>
 
     </div>
+<!-- Começando as minhas cifras -->
+
+<div class="TituloMCifras">* 𝑴𝒊𝒏𝒉𝒂𝒔 𝑪𝒊𝒇𝒓𝒂𝒔/𝑨𝒍𝒇𝒂𝒃𝒆𝒕𝒐𝒔 *</div>
+        <div class="rutshDiv">
+
+            <h2 class="rutshTitulo">* Rutsh</h2>
+            <p class="pH2">A cifra de Rutsh funciona usando duas cifras, cifras de Atbash e a A1Z26
+                logo depois adicionando uma regra para separar as letras de palavras, e palavras de palavras</p>
+            <p class="pH2comentario">ficou meio estranho isso ksks</p>
+            <h3>Exemplo :</h3>
+            <p class="pH2size25">Eu sou Jason + Atbash = Vf hlf Qzhlm, Vf hlf Qzhlm + A1Z26 = 22 , 6, 8, 12, 6, 17, 26, 8, 12, 13</p>
+            <p class="pH2">Agora para separar letras da palavras usamos apenas um traço ("-") e para separar palavras usamos dois traços ("--"), então fica:</p>
+            <p class="pH2size25">22-6--8-12-6--17-26-8-12-13</p>
+            <p class="pH2comentario">(Essa foi minha primeira cifra, então é meio paia mesmo kksk)</p>
+    </div>
+
 
     <!-- sempre deixar essa div como ultimo -->
      <div id="copyright">
 
-    <p>Tambem existem milhares de sites e videos no youtube por exemplo que esplicam e decodificam essas cifras e enigmas.</p>
-    <p>Recomendo bastante um canal em expecifico o nome é Rentune, se puder segue ele lá.</p>
-    <p>foi ele quem me mostrou essa parte do mundo, e por consequencia acabei criando esse site ksksk.</p>
+    <p>Tambem existem milhares de sites e videos no youtube por exemplo que explicam e decodificam essas cifras e enigmas.</p>
+    <p>Recomendo bastante um canal em expecifico o nome é Rentune, se puder segue ele lá</p>
+    <p>foi ele quem me "mostrou" essa parte do mundo, e por consequencia acabei criando esse site ksksk.</p>
+    <p>A e eu deixei o site nesse estilo porque eu adoro coisas frutiger aero, é digamos meio nostalgico e tambem bonito.)</p>
+    <p class="pH2comentario">(A musica que toca é do youtube o nome é "2000s ~𝒩𝑜𝓈𝓉𝒶𝓁𝑔𝒾𝒸~ Frutiger Aero Playlist"</p>
 
      <a class="linkJason" href="https://www.youtube.com/rentune">- Canal Rentune -</a>
      <a class="linkJason" href="https://github.com/JasonAranhudo">- Perfil do JasonAranhudo no Github -</a>
      <a class="linkJason" href="https://www.tiktok.com/@jason_aranhudo">- Perfil do JasonAranhudo no Tiktok -</a>
      <p>- Pagina feita pelo usuario do Github JasonAranhudo -</p>
      </div>
+    </div>
 
+    <div>
+        <script src="script.js"></script>
+    </div>
 </body>
 </html>

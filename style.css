@@ -1,29 +1,44 @@
-/* BODY */
+/* BODY E DIV SITE*/
 
 body {
-    background-color: rgb(15, 15, 15);
+    
+background-image: linear-gradient(to bottom,  rgba(135, 200, 195, 0.9), rgb(153, 248, 177));
+
+    min-height: 100vh;
+    margin: 0;
+}
+
+#Site{
+
     background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-    background-size: 40px 40px;
+    linear-gradient(rgba(255, 255, 255, 0.4) 2px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.4) 2px, transparent 1px);
+    background-size: 50px 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* BARRA DE PESQUISA */
 
-input{
+input {
+
+    background-image: linear-gradient(to bottom, rgba(0, 255, 255, 0.2), rgba(0, 255, 0, 0.2));
+    background-color: rgba(240, 248, 255, 0.01);
     display: block;
     margin: auto;
     margin-top: 30px;
 
     width: 300px;
     height: 40px;
-
+    
     border-radius: 20px;
-    border: none;
-
     padding-left: 15px;
-
     font-size: 16px;
+
+    border: 2px solid black; 
+   
 }
 
 /* TITULOS */
@@ -31,10 +46,10 @@ input{
 .tituloH1{
 
     font-size: 25px;
-    text-align: center;
     background-color: aliceblue;
-    border-radius: 30px;
+    border-radius: 10px;
     border: 4px solid rgb(61, 61, 61);
+
 }
 
 .TituloCifras{
@@ -44,13 +59,9 @@ input{
     linear-gradient(rgba(0, 185, 0, 0.4) 2px, transparent 1px),
     linear-gradient(90deg, rgba(0, 185, 0, 0.4) 2px, transparent 1px);
     background-size: 10px 10px;
-
-    font-size: 30px;
-    text-align: center;
-    border-radius: 30px;
+    font-size: 25px;
     border: 3px solid darkgreen;
     margin-top: 45px;
-
 }
 
 .TituloAlfabetos{
@@ -62,15 +73,28 @@ input{
     background-size: 20px 20px;
 
     font-size: 30px;
-    text-align: center;
     border-radius: 30px;
     border: 3px solid darkblue;
     color: rgb(0, 0, 0);
     margin-top: 45px;
 }
 
-/* CIFRAS */
+.TituloMCifras{
 
+    background-color: rgb(150, 220, 215, 1);
+    background-image: 
+    linear-gradient(rgb(115, 170, 165) 2px, transparent 1px),
+    linear-gradient(90deg, rgba(115, 170, 165) 2px, transparent 1px);
+    background-size: 18px 18px;
+
+    font-size: 30px;
+    border-radius: 15px;
+    border: 2px solid rgb(77, 0, 77);
+    color: rgb(0, 0, 0);
+    margin-top: 45px;
+}
+
+/* CIFRAS */
 
 /* VIGENÈRE */
 
@@ -99,7 +123,7 @@ input{
 
 .cesarTitulo{
 
-    background-color: rgb(210, 5, 60);
+    background-color: rgb(175, 20, 60);
     border-radius: 7px;
     border: 2px solid black;
     width: fit-content;
@@ -179,74 +203,148 @@ input{
     margin: 16px;
 }
 
-.PigpenLink{
+/* minhas cifras */
 
-    color: pink;
-    font-size: 18px;
+/* RUTSH */
+
+.rutshDiv{
+
+    margin-top: 35px;
+    margin-bottom: 70px;
 }
 
-.PigpenLink:hover{
+.rutshTitulo{
 
-    color: rgb(255, 50, 50);
+    background-color: rgb(255, 0, 0);
+    border-radius: 7px;
+    border: 2px solid black;
+    width: fit-content;
+    margin: 5px;
 }
 
-/*sempre manter o "h3" e "div" como ultimos na parte de cifras*/
+
+
+/* sempre manter o "h3" e "div" como ultimos na parte de cifras */
 
 h3{
 
-    color: white;
+    color: rgb(24, 0, 68);
     font-size: 21px;
-    background-color: rgba(255, 255, 255, 0.11);
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 7px;
     width: fit-content;
     margin: 7px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-/* Textos/Paragrafos e coisas adicionais*/
+/* Textos/Paragrafos e coisas adicionais */
 
 #p1{
 
     text-align: center;
     font-size: 15px;
-    color: rgb(0, 255, 90);
+    color: rgb(0, 135, 50);
 }
 
 .pH2{
 
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .pH2size25{
 
     font-size: 25px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .pH2comentario{
 
-    color: rgba(230, 230, 230, 0.6);
-    font-size: 18px;
+    color: rgb(61, 61, 61);
+    font-size: 16px;
 }
+
+
+/* LINKS */
+
+/* Jason */
+
+.linkJason{
+
+    color: rgba(55, 120, 125, 0.8);
+    transition: 0.1s;
+}
+
+.linkJason:hover{
+
+    color: rgba(138, 185, 240, 0.8);
+    transition: 0.15s;
+}
+
+/*Pigpen*/
+
+.PigpenLink{
+
+    color: rgb(255, 128, 149);
+    font-size: 18px;
+    transition: 0.1s;
+}
+
+.PigpenLink:hover{
+
+    color: rgb(255, 50, 50);
+    transition: 0.15s;
+}
+
+/* Block das DIVs*/
+
+.vigenereDiv,
+.cesarDiv,
+.atbashDiv,
+.morseDiv,
+.pigpenDiv,
+.rutshDiv,
+#copyright{
+
+    width: 80%;
+    max-width: 900px;
+    background-color: rgba(255,255,255,0.15);
+    border: 2px solid rgba(255,255,255,0.45);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* Musica */
+
+#botaoMusica{
+
+    position: fixed;
+
+    top: 15px;
+    left: 15px;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    border: 2px solid black;
+
+    background-color: rgba(255,255,255,0.7);
+
+    cursor: pointer;
+
+    font-size: 20px;
+}
+
 
 /* deixar copyright sempre como ultimo*/
 
 #copyright{
 
-    color: rgba(128, 128, 128, 0.445);
+    color: rgb(65, 65, 65);
     margin-top: 85px;
     margin-bottom: 65px;
     font-size: 18px;
-}
-
-.linkJason{
-
-    color: rgba(55, 120, 125, 0.5);
-}
-
-.linkJason:hover{
-
-    color: rgba(210, 210, 210, 0.8);
 }
