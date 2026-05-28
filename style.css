@@ -97,11 +97,6 @@ input {
 
 /* VIGENÈRE */
 
-.vigenereDiv{
-    margin-top: 35px;
-    margin-bottom: 55px;
-}
-
 .vigenereTitulo{
 
     background-color: yellow;
@@ -113,12 +108,6 @@ input {
 }
 
 /* CESAR */
-
-.cesarDiv{
-
-    margin-top: 70px;
-    margin-bottom: 55px;
-}
 
 .cesarTitulo{
 
@@ -132,12 +121,6 @@ input {
 
 /* ATBASH */
 
-.atbashDiv{
-
-    margin-top: 70px;
-    margin-bottom: 55px;
-}
-
 .atbashTitulo{
 
     background-color: rgb(0, 200, 200);
@@ -150,12 +133,6 @@ input {
 /* ALFABETOS*/
 
 /* CÓDIGO MORSE */
-
-.morseDiv{
-
-    margin-top: 35px;
-    margin-bottom: 70px;
-}
 
 .morseTitulo{
  
@@ -180,12 +157,6 @@ input {
 
 /* PIGPEN */
 
-.pigpenDiv{
-
-    margin-top: 35px;
-    margin-bottom: 70px;
-}
-
 .pigpenTitulo{
 
     background-color: rgb(255, 104, 235);
@@ -206,12 +177,6 @@ input {
 
 /* RUTSH */
 
-.rutshDiv{
-
-    margin-top: 35px;
-    margin-bottom: 70px;
-}
-
 .rutshTitulo{
 
     background-color: rgb(255, 0, 0);
@@ -222,12 +187,6 @@ input {
 }
 
 /* VOUTVISH */
-
-.voutvishDiv{
-
-    margin-top: 35px;
-    margin-bottom: 70px;
-}
 
 .voutvishTitulo{
 
@@ -244,12 +203,6 @@ input {
     margin: 16px;
 }
 
-.seltaebDiv{
-
-    margin-top: 35px;
-    margin-bottom: 70px;
-}
-
 .seltaebTitulo{
 
     background-color: rgb(140, 110, 195);
@@ -261,11 +214,26 @@ input {
 
 .seltaebImg{
 
-    width: 290px;
-    height: 290px;
+    width: 280px;
+    height: 280px;
     margin: 16px;
 }
 
+.neeuqTitulo{
+
+    background-color: rgb(55, 185, 99);
+    border-radius: 7px;
+    border: 2px solid black;
+    width: fit-content;
+    margin: 5px;
+}
+
+.neeuqImg{
+
+    width: 280px;
+    height: 280px;
+    margin: 16px;
+}
 /* sempre manter o "h3" e "div" como ultimos na parte de cifras */
 
 h3{
@@ -349,8 +317,11 @@ h3{
 .rutshDiv,
 .voutvishDiv,
 .seltaebDiv,
+.neeuqDiv,
 #copyright{
 
+    margin-top: 35px;
+    margin-bottom: 70px;
     width: 80%;
     max-width: 900px;
     background-color: rgba(255,255,255,0.15);
