@@ -2,7 +2,6 @@
 <html lang="pt-br">
 <!-- esse site for feito para ser simples mesmo, provavelmente com o tempo eu posso atualizar -->
 <head>
-
     <!-- código do microsoft Clarity -->
     <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -11,7 +10,6 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "wydlzf1q0x");
 </script>
-
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,23 +17,44 @@
     <title>Jason Explorer</title>
 </head>
 <body>
+ 
     <div id="Site">
-        <button id="botaoMusica" onclick="musicaToggle()">
-            🎵
-            </button>
-            
-            <audio id="musica" loop>
-                <source src="Assets/FrutigerAeroComplete.mp3" type="audio/mpeg">
-            </audio>
+   <div id="Menu">
+        <button id="Musica" onclick="musicaToggle()">
+        🎵
+        </button>
+        <audio id="musica" loop>
+            <source src="Assets/FrutigerAeroComplete.mp3" type="audio/mpeg">
+        </audio>
+
+    <h2 id="aH2" class="AtCifra">Cifras</h2>
+    <a href="#vigenere"><button class="Avigenere">Vigenère</button></a>
+    <a href="#cesar"><button class="Acesar">César</button></a>
+    <a href="#atbash"><button class="Aatbash">Atbash</button></a>
+
+    <h2 a="aH2" class="AtAlfab">Alfabetos</h2>
+    <a href="#morse"><button class="Amorse">C Morse</button></a>
+    <a href="#pigpen"><button class="Apigpen">Pigpen</button></a>
+    <a href="#ascII"><button class="AascII">ASCII</button></a>
+
+    <h2 id="aH2" class="AtMCifra">Minhas cifras</h2>
+    <a href="#rutsh"><button class="Arutsh">Rutsh</button></a>
+    <a href="#voutvish"><button class="Avoutvish">Voutvish</button></a>
+    <a href="#seltaeb"><button class="Aseltaeb">Seltaeb</button></a>
+    <a href="#neeuq"><button class="Aneeuq">Neeuq</button></a>
+    <a href="#mel"><button class="Amel">Mat- em letras</button></a>
+
+    <h2 id="aH2" class="AtMais">Mais coisas</h2>
+    <a href="#curiosidades"><button class="Acuriosidades">Curiosidades</button></a>
+    <a href="#CpeUpd"><button class="ACpeUpd">Upd e crédito</button></a>
+</div>
 
     <h1 class="tituloH1">Esta é uma biblioteca de cifras, alfabetos, linguas, enigmas e códigos. Procure o que quiser pesquisando aqui!</h1>
-    <input type="text" placeholder="🔍  'ainda não funciona'">
     <p id="p1">(este site foi feito originalmente para um certo enigma que estou fazendo, e provavelmente o meu professor vai tentar decifra-lo)</p>
-
+    <p class="pH2comentario">(recomendo que use computador para usar esse site porque a minha referencia é sempre o pc, então quando abrem o site pelo mobile é estranho)</p>
 <h1 class="TituloCifras">* ᑕIᖴᖇᗩS *</h1>
 
-    <div class="vigenereDiv">
-<!-- cifra de Vigenère -->
+    <div id="vigenere" class="vigenereDiv">
 <!-- Neste site a cifra de vigenère começa em 1 ao inves de 0 porque é mais simples-->
         <h2 class="vigenereTitulo">* Vigenère</h2>
         <p class="pH2">A cifra de Vigenère funciona mudando a posição das letras de acordo com uma palavra(senha), 
@@ -47,18 +66,14 @@
         <p class="pH2">Oi = 2 letras, Jason = 5 letras. logo a senha vira: Oioio = 15, 9, 15, 9, 15</p>
         <p class="pH2">J+15 = X, A+9 = I, S+15 = G, O+9 = W, N+15 = B. Jason = XISGWB.</p>
     </div>
-    <div class="cesarDiv">
-
-<!-- cifra de César -->
+    <div id="cesar" class="cesarDiv">
         <h2 class="cesarTitulo">* César</h2>
         <p class="pH2">A cifra de César funciona mudando a posição das letras nas palavras usando "sifts"(indo um certo numero fixo de casas para esquerda ou para a direita).</p>
         <h3>Exemplo :</h3>
         <p class="pH2size25">Jason + César com shift 6 para direita</p>
         <p class="pH2size25">Resposta de Jason com shift 6 é: OFXTS.</p>
     </div>
-    <div class="atbashDiv">
-
-<!-- cifra de Atbash-->
+    <div id="atbash" class="atbashDiv">
         <h2 class="atbashTitulo">* Atbash</h2>
         <p class="pH2">A cifra de Atbash funciona trocando a letra da palavra codificada pela letra do alfabeto ao contrario.</p>
         <h3>Exemplo :</h3>
@@ -71,9 +86,7 @@
     </div>
 
     <div class="TituloAlfabetos">* 𝘼𝙡𝙛𝙖𝙗𝙚𝙩𝙤𝙨 *</div>
-
-    <div class="morseDiv">
-
+    <div id="morse" class="morseDiv">
         <h2 class="morseTitulo">* Código morse</h2>
         <p class="pH2">O código morse funciona mudando as letras do alfabeto por traços ("-") e pontos (".")</p>
         <p class="pH2">Para usar o código morse é como usar o alfabeto normal, apenas quando for escrever uma palavra deixe um espaço entre uma letra e outra,
@@ -84,8 +97,7 @@
         <p class="pH2size25">Jason = .--- .- ... --- -.</p>
         <p class="pH2size25">Sou uma aranha = ... --- ..- / ..- -- .- / .- .-. .- -. .... .-</p>
     </div>
-    <div class="pigpenDiv">
-
+    <div id="pigpen" class="pigpenDiv">
         <h2 class="pigpenTitulo">* Pigpen🐷</h2>
         <p class="pH2">O alfabeto Pigpen funciona como o alfabeto normal só mudando a estética do caractere.</p>
         <img class="ImgPigpen"src="Assets/Pigpen.jpg" alt="Alfabeto Pigpen">
@@ -94,12 +106,20 @@
         <p class="pH2size25">Eu sou uma aranha = □< v⟃< <⟄⅃ ⅃⟔⅃⊡⊓⅃</p>
         <p class="pH2comentario">eu recomendo usar algum site para codificar uma palavra no Pc ou celular.</p>
         <a class="PigpenLink" href="https://lingojam.com/PigpenCipher" target="_blank">- Decoder Pigpen -</a>
-
+    </div>
+    <div id="ascII" class="AscIIDiv">
+        <h2 class="AscIITitulo">* ASCII</h2>
+        <p class="pH2">O código ASCII é um sistema que converte letras, numeros e simbolos por numeros binários.
+        ele serve como um tradutor universal para que diferentes dispositivos entendam e troquem informações entre si.
+        </p>
+        <h3>Exemplo :</h3>
+        <img class="ImgAscII" src="Assets/codigoASCII.png" alt="Tabela do código ASCII">
+        <p class="pH2">Então seguindo a tabela fica:</p>
+        <p class="pH2size25">Jason = 74 97 115 111 110</p>
     </div>
 <!-- Começando as minhas cifras -->
-
 <div class="TituloMCifras">* 𝑴𝒊𝒏𝒉𝒂𝒔 𝑪𝒊𝒇𝒓𝒂𝒔/𝑨𝒍𝒇𝒂𝒃𝒆𝒕𝒐𝒔 *</div>
-        <div class="rutshDiv">
+        <div id="rutsh"class="rutshDiv">
             <h2 class="rutshTitulo">* Rutsh</h2>
             <p class="pH2">A cifra de Rutsh funciona usando duas cifras, cifras de Atbash e a A1Z26
                 logo depois adicionando uma regra para separar as letras de palavras, e palavras de palavras</p>
@@ -110,16 +130,13 @@
             <p class="pH2size25">22-6--8-12-6--17-26-8-12-13</p>
             <p class="pH2comentario">(Essa foi minha primeira cifra, então é meio paia mesmo kksk)</p>
     </div>
-
-<div class="voutvishDiv">
+<div id="voutvish"class="voutvishDiv">
         <h2 class="voutvishTitulo">* Voutvish</h2>
         <p class="pH2">O alfabeto Voutvish funciona como o alfabeto normal só mudando a estética do caractere.</p>
         <p class="pH2comentario">(A fonte do alfabeto não existe em teclado ou na web porque é meio que meu e nunca postei nada sobre, menos esse site obviamente)</p>
         <img class="voutvishImg" src="Assets/Voutvish.png" alt="um alfabeto com caracteres diferentes"> 
     </div>
-
-<!-- Seltaeb -->
-<div class="seltaebDiv">
+<div id="seltaeb"class="seltaebDiv">
         <h2 class="seltaebTitulo">* Seltaeb</h2>
         <p class="pH2comentario">Por enquanto a minha cifra mais complexa ksks</p>
         <p class="pH2">A cifra de Seltaeb funciona pegando cada primeira letra da frase para criar outra palavra,
@@ -142,9 +159,7 @@
 
 </div>
 
-    <!-- irmã da Saltaeb, Neeuq -->
-<div class="neeuqDiv">
-
+<div id="neeuq"class="neeuqDiv">
         <h2 class="neeuqTitulo">* Neuuq</h2>
         <p class="pH2">A cifra de Neuuq funciona como uma mistura de Quantrix e Seltaeb.</p>
         <p class="pH2">Faça uma tabela 8 x 10, coloque a sua frase da esquerda para direita deixando pontos/asteriscos como espaço entre palavras.</p>
@@ -157,13 +172,9 @@
         <p class="pH2size25">Jason é legal = jg,aa,sl,o-,n-,*-,é-,*-,l-,e-"</p>
         <p class="pH2comentario">Essa cifra eu fiz junto com a Seltaeb por isso são parecidas e para mim são irmãs, fiquei bastante tempo matutando o que colocar colocar nessa cifra depois acabei misturando duas e adicionando uma regrinha.</p>
         <p class="pH2comentario">Se você prestar atenção ela tem a mesma referencia que a Seltaeb porque invertendo o nome Neeuq fica Queen que tambem é nome de uma banda de musica(e pra mim eu acho as duas bandas tão parecidas que parecem irmãs)</p>
-
 </div>
 
-<!-- metematica em letras -->
-
-<div class="MELDiv">
-
+<div id="mel"class="MELDiv">
     <h2 class="MELTitulo">Matematica em Letras</h2>
     <p class="pH2">A cifra Matematica em Letras funciona pegando cada silaba da frase e fazendo contas de adição e subtração para codificar a frase.</p>
     <p class="pH2">Você deve somar todos os numeros (letras do alfabeto) que tem em cada silaba,
@@ -180,14 +191,13 @@
 </div>
 
 <!-- curiosidades -->
-
-    <div class="curiosidadesDiv">
+    <div id="curiosidades" class="curiosidadesDiv">
         <h2 class="curiosidadesTitulo">- Curiosidades Legais -</h2>
         <p class="pH2">° As cifras foram criadas para passar informações sem serem lidas por qualquer um,
             um exemplo é o código morse que pode ser lido por um padrão de piscadas, toques em uma mesa, código em papel, sinalizar com luz etc.
         </p>
         <p class="pH2">° Um homem que tinha sido feito prisioneiro de guerra pelo Vietnã em 1965 chamado Jeremiah Denton foi forçado a fazer uma entrevista,
-            atraves do código morse(piscando o olho repetidas vezes) ele disse "Torture"(tortura em portugues)</p>
+            atraves do código morse(piscando o olho repetidas vezes) ele disse "Torture"(tortura em portugues) evidenciando que os prisioneiros estavam sendo torturados.</p>
         <p class="pH2">° Existem mistérios e enigmas que nunca foram solucionados como o manuscrito de voynich(minha inspiração pro nome do meu alfabeto "voutvish"),
 
         </p>
@@ -195,19 +205,26 @@
 </div>
 
     <!-- sempre deixar essa div como ultimo -->
-     <div id="copyright">
+    <div id="CpeUpd" class="CopyrightEUpdates">
+    <h2 class="UpdatesT">atualizações</h2>
+    <h2>Versão 1.2 - atualização feita em 3 dia</h2>
+    <p class="pH2">Mudanças no Design do site: Divs das explicações com bordas quadradas, troca de transparencia do fundo para 0.9 (ficou menos transparente), background com cores mais vivas e o degrade ficou da esquerda para direita.
+        Adicão do menu, modificação em copyright para adição da parte de atualizações, Código ASCII, tirei a barra de pesquisa para
+        trocar pelo menu e adicionei um arquivo importante.</p>
+        <p class="pH2comentario">Cara demorou muito tempo pra vir essa atualização, principalmente pra fazer o bendito menu.
+            o que eu achava que seria mais facil que programar uma barra de pesquisa foi muito repetitivo e cansativo.
+        </p>
 
-    <p>Tambem existem milhares de sites e videos no youtube por exemplo que explicam e decodificam essas cifras e enigmas.</p>
-    <p>Recomendo bastante um canal em expecifico o nome é Rentune, se puder segue ele lá</p>
-    <p>foi ele quem me "mostrou" essa parte do mundo, e por consequencia acabei criando esse site ksksk.</p>
-    <p>A e eu deixei o site nesse estilo porque eu adoro coisas frutiger aero, é digamos meio nostalgico e tambem bonito.)</p>
-    <p class="pH2comentario">(A musica que toca é do youtube o nome é "2000s ~𝒩𝑜𝓈𝓉𝒶𝓁𝑔𝒾𝒸~ Frutiger Aero Playlist"</p>
+    <p class="pH2copyright">Tambem existem milhares de sites e videos no youtube por exemplo que explicam e decodificam essas cifras e enigmas.</p>
+    <p class="pH2copyright">Recomendo bastante um canal em expecifico o nome é Rentune, se puder segue ele lá. 
+        Foi ele quem me "mostrou" essa parte do mundo, e por consequencia acabei criando esse site ksksk. 
+        A e eu deixei o site nesse estilo porque eu adoro coisas frutiger aero, é digamos meio nostalgico e tambem bonito.</p>
+    <p class="pH2copyright">A musica que toca é do youtube o nome é "2000s ~𝒩𝑜𝓈𝓉𝒶𝓁𝑔𝒾𝒸~ Frutiger Aero Playlist"</p>
 
      <a class="linkJason" href="https://www.youtube.com/rentune" target="-blank">- Canal Rentune -</a>
      <a class="linkJason" href="https://github.com/JasonAranhudo" target="_blank">- Perfil do JasonAranhudo no Github -</a>
-     <p>- Pagina feita pelo usuario do Github JasonAranhudo -</p>
+     <p class="pH2">- Pagina feita pelo usuario do Github JasonAranhudo -</p>
      </div>
-
     <div>
         <script src="script.js"></script>
     </div>
