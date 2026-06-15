@@ -1,58 +1,30 @@
-/* BODY E DIV SITE*/
-
 body {
-background-image: linear-gradient(to bottom,  rgba(135, 200, 195, 0.9), rgb(153, 248, 177));
-
+background-image: linear-gradient(to right,  rgba(150, 255, 245, 0.9), rgba(130, 210, 210, 0.9));
     min-height: 100vh;
     margin: 0;
 }
 
 #Site{
-
-    background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.4) 2px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.4) 2px, transparent 1px);
-    background-size: 50px 50px;
-
+        background-image: 
+            linear-gradient(rgba(255, 255, 255, 0.4) 2px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.4) 2px, transparent 1px);
+        background-size: 50px 50px, 50px 50px, auto;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* BARRA DE PESQUISA */
-
-input {
-
-    background-image: linear-gradient(to bottom, rgba(0, 255, 255, 0.2), rgba(0, 255, 0, 0.2));
-    background-color: rgba(240, 248, 255, 0.01);
-    display: block;
-    margin: auto;
-    margin-top: 30px;
-
-    width: 300px;
-    height: 40px;
-    
-    border-radius: 20px;
-    padding-left: 15px;
-    font-size: 16px;
-
-    border: 2px solid black; 
-   
-}
-
 /* TITULOS */
 
 .tituloH1{
-
     font-size: 25px;
     background-color: aliceblue;
     border-radius: 10px;
     border: 4px solid rgb(61, 61, 61);
-
 }
 
 .TituloCifras{
-
     background-color: rgb(0, 255, 0);
     background-image: 
     linear-gradient(rgba(0, 185, 0, 0.4) 2px, transparent 1px),
@@ -64,7 +36,6 @@ input {
 }
 
 .TituloAlfabetos{
-
     background-color: rgb(200, 255, 255);
     background-image: 
     linear-gradient(rgba(20, 190, 225, 0.8) 2px, transparent 1px),
@@ -73,55 +44,75 @@ input {
 
     font-size: 30px;
     border-radius: 30px;
-    border: 3px solid darkblue;
+    border: 3px solid rgb(0, 0, 0);
     color: rgb(0, 0, 0);
     margin-top: 45px;
 }
 
 .TituloMCifras{
-
     background-color: rgb(150, 220, 215, 1);
     background-image: 
-    linear-gradient(rgb(115, 170, 165) 2px, transparent 1px),
-    linear-gradient(90deg, rgba(115, 170, 165) 2px, transparent 1px);
+    linear-gradient(rgb(115, 170, 122) 2px, transparent 1px),
+    linear-gradient(90deg, rgb(115, 170, 122) 2px, transparent 1px);
     background-size: 18px 18px;
 
     font-size: 30px;
     border-radius: 15px;
-    border: 2px solid rgb(77, 0, 77);
+    border: 2px solid rgb(0, 131, 11);
     color: rgb(0, 0, 0);
     margin-top: 45px;
 }
 
-/* CIFRAS */
+/* Textos/Paragrafos e coisas adicionais */
 
-/* VIGENÈRE */
+#p1{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(0, 135, 50);
+}
 
+#aH2{
+    margin-top: 6px;
+    margin-bottom: 6px;
+
+}
+
+.pH2{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.pH2size25{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.pH2comentario{
+    color: rgb(61, 61, 61);
+    font-size: 16px;
+}
+
+.pH2copyright{
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* Cifras */
 .vigenereTitulo{
-
     background-color: yellow;
 }
 
-/* CESAR */
-
 .cesarTitulo{
-
     background-color: rgb(175, 20, 60);
 }
 
-/* ATBASH */
-
 .atbashTitulo{
-
     background-color: rgb(0, 200, 200);
 }
 
-/* ALFABETOS*/
-
-/* CÓDIGO MORSE */
-
+/* Alfabetos */
 .morseTitulo{
- 
     background-color: rgb(255, 255, 255);
     background-image: 
     linear-gradient(rgba(73, 73, 73, 0.8) 1px, transparent 1px),
@@ -130,40 +121,39 @@ input {
 }
 
 .ImgMorse{
-
     width: 250px;
     height: 220px;
     margin: 16px;
 }
 
-/* PigPen */
-
 .pigpenTitulo{
-
-    background-color: rgb(255, 104, 235);
+    background-color: pink;
 }
 
 .ImgPigpen{
-
     width: 260px;
     height: 240px;
     margin: 16px;
 }
 
-/* minhas cifras */
-
-/* Rutsh */
-
-.rutshTitulo{
-
-    background-color: rgb(255, 0, 0);
+.AscIITitulo{
+    background-color: rgb(100, 185, 235);
 }
 
-/* Voutvish */
+.ImgAscII{
+    width: 390px;
+    height: 370px;
+    margin: 16px;
+}
+
+/* Minhas cifras */
+
+.rutshTitulo{
+    background-color: red;
+}
 
 .voutvishTitulo{
-
-    background-color: rgb(52, 255, 238);
+    background-color: rgb(50, 255, 235);
 }
 
 .voutvishImg{
@@ -172,60 +162,37 @@ input {
     margin: 16px;
 }
 
-/* Seltaeb */
 .seltaebTitulo{
-
     background-color: rgb(140, 110, 195);
 }
 
 .seltaebImg{
-
     width: 280px;
     height: 280px;
     margin: 16px;
 }
 
-/* Neeuq */
 .neeuqTitulo{
-
     background-color: rgb(55, 185, 99);
 }
 
 .neeuqImg{
-
     width: 280px;
     height: 280px;
     margin: 16px;
 }
 
-/* matematica das letras*/
 .MELTitulo{
-
     background-color: rgb(250, 205, 175);
 }
 
 .MELimg{
-
     width: 280px;
     height: 280px;
     margin: 16px;
 }
-/* sempre manter o "h3" e "div" como ultimos na parte de cifras */
 
-h3{
-
-    color: rgb(24, 0, 68);
-    font-size: 21px;
-    background-color: rgba(255, 255, 255, 0.25);
-    border-radius: 7px;
-    width: fit-content;
-    margin: 7px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-/* CURIOSIDADES */
-
+/* Curiosidades */
 .curiosidadesDiv{
     display: flex;
     flex-direction: column;
@@ -236,135 +203,260 @@ h3{
     background-color: rgb(255, 255, 255);
 }
 
-/* Textos/Paragrafos e coisas adicionais */
-
-#p1{
-
-    text-align: center;
-    font-size: 15px;
-    color: rgb(0, 135, 50);
+/* Sempre manter o "h3" e "div" como ultimos na parte de cifras */
+h3{
+    color: rgb(24, 0, 68);
+    font-size: 21px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 7px;
+    width: fit-content;
+    margin: 7px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-.pH2{
-
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-}
-
-.pH2size25{
-
-    font-size: 25px;
-    color: rgb(0, 0, 0);
-}
-
-.pH2comentario{
-
-    color: rgb(61, 61, 61);
-    font-size: 16px;
-}
-
 
 /* LINKS */
-
-/* Jason */
-
 .linkJason{
-
     color: rgba(55, 120, 125, 0.8);
     transition: 0.1s;
 }
 
 .linkJason:hover{
-
     color: rgba(138, 185, 240, 0.8);
     transition: 0.15s;
 }
 
-/*Pigpen*/
-
 .PigpenLink{
-
     color: rgb(255, 128, 149);
     font-size: 18px;
     transition: 0.1s;
 }
 
 .PigpenLink:hover{
-
     color: rgb(255, 50, 50);
     transition: 0.15s;
 }
 
 /* BLOCOS */
 
-/* Block dos titulos */
-
 .vigenereTitulo,
 .cesarTitulo,
 .atbashTitulo,
 .morseTitulo,
 .pigpenTitulo,
+.AscIITitulo,
 .rutshTitulo,
 .voutvishTitulo,
 .seltaebTitulo,
 .neeuqTitulo,
 .MELTitulo,
-.curiosidadesTitulo{
+.curiosidadesTitulo,
+.UpdatesT{
     border-radius: 7px;
     border: 2px solid black;
     width: fit-content;
     margin: 5px;
 }
 
-
-/* Block das DIVs*/
-
 .vigenereDiv,
 .cesarDiv,
 .atbashDiv,
 .morseDiv,
 .pigpenDiv,
+.AscIIDiv,
 .rutshDiv,
 .voutvishDiv,
 .seltaebDiv,
 .neeuqDiv,
 .MELDiv,
 .curiosidadesDiv,
-#copyright{
-
+.CopyrightEUpdates{
     margin-top: 35px;
     margin-bottom: 70px;
     width: 80%;
     max-width: 900px;
-    background-color: rgba(255,255,255,0.15);
-    border: 2px solid rgba(255,255,255,0.45);
-    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.9);
     padding: 20px;
 }
 
-/* Musica */
+.Avigenere,
+.Acesar,
+.Aatbash,
+.Amorse,
+.Apigpen,
+.AascII,
+.Arutsh,
+.Avoutvish,
+.Aseltaeb,
+.Aneeuq,
+.Amel,
+.Acuriosidades,
+.ACpeUpd{
+    border: 1px solid black;
+    margin-top: 4px;
+    font-size: 16px;
+    transition: 0.1s;
+    grid-area: 1 / 1;
+}
 
-#botaoMusica{
+.Avigenere:hover,
+.Acesar:hover,
+.Aatbash:hover,
+.Amorse:hover,
+.Apigpen:hover,
+.AascII:hover,
+.Arutsh:hover,
+.Avoutvish:hover,
+.Aseltaeb:hover,
+.Aneeuq:hover,
+.Amel:hover,
+.Acuriosidades:hover,
+.ACpeUpd:hover{
+    font-size: 19px;
+    transition: 0.1s;
+}
 
+/* Menu */
+#Menu{
     position: fixed;
-    top: 15px;
-    left: 15px;
-    width: 50px;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height: 750px;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    transition: 0.1s;
+    display: grid;
+    place-items: center;
+}
+
+.Avigenere{
+    background-color:  yellow;
+}
+
+.Acesar{
+    background-color:  rgb(175, 20, 60);
+}
+
+.Aatbash{
+    background-color: rgb(0, 200, 200);
+}
+
+.Amorse{
+    background-image: 
+    linear-gradient(rgba(107, 107, 107) 2px, transparent 1px),
+    linear-gradient(90deg, rgb(107, 107, 107) 2px, transparent 1px);
+    background-size: 13px 13px;
+}
+
+.Apigpen{
+    background-color: pink;
+}
+
+.AascII{
+    background-color: rgb(100, 185, 235);
+}
+
+.Arutsh{
+    background-color: red;
+}
+
+.Avoutvish{
+    background-color: rgb(50, 255, 235);
+}
+
+.Aseltaeb{
+    background-color: rgb(140, 110, 195);
+}
+
+.Aneeuq{
+    background-color: rgb(55, 185, 99);
+}
+
+.Amel{
+    background-color: rgb(250, 205, 175);
+}
+
+.Acuriosidades{
+    background-color: rgb(255, 255, 255);
+}
+
+.ACpeUpd{
+    background-image: linear-gradient(to right,  rgba(230, 230, 230, 0.45), rgba(200, 200, 200, 0.3));
+    background-color: rgba(230, 230, 230, 0.5);
+}
+
+.AtCifra{
+    background-color: rgb(0, 255, 0);
+    background-image: 
+    linear-gradient(rgba(0, 185, 0, 0.4) 2px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 185, 0, 0.4) 2px, transparent 1px);
+    background-size: 8px 8px;
+
+    font-size: 20px;
+    border: 3px solid darkgreen;
+    width: fit-content;
+}
+
+.AtAlfab{
+    background-color: rgb(200, 255, 255);
+    background-image: 
+    linear-gradient(rgba(20, 190, 225, 0.8) 2px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 190, 225, 0.8) 2px, transparent 1px);
+    background-size: 20px 20px;
+
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    width: fit-content;
+}
+
+.AtMCifra{
+    background-color: rgb(150, 220, 215, 1);
+    background-image: 
+    linear-gradient(rgb(115, 170, 122) 2px, transparent 1px),
+    linear-gradient(90deg, rgb(115, 170, 122) 2px, transparent 1px);
+    background-size: 18px 18px;
+
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 131, 11);
+    color: rgb(0, 0, 0);
+    width: fit-content;
+}
+
+.AtMais{
+    background-color: rgb(200, 255, 255);
+    background-image: linear-gradient(to right, rgba(230, 230, 230, 0.45), rgba(204, 204, 204, 0.35));
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    width: fit-content;
+}
+/* Musica */
+#Musica{
+    margin-top: 5px;
+    width: 130px;
     height: 50px;
-    border-radius: 50%;
     border: 2px solid black;
     background-color: rgba(255,255,255,0.7);
     cursor: pointer;
     font-size: 20px;
+    transition: 0.1s;
 }
 
+#Musica:hover{
+    transition: 0.2s;
+    inline-size: 135px;
+    block-size: 55px;
+}
 
-/* deixar copyright sempre como ultimo*/
-
-#copyright{
-
-    color: rgb(65, 65, 65);
-    margin-top: 85px;
-    margin-bottom: 65px;
-    font-size: 18px;
+/* deixar copyrightEUpdates sempre como ultimo */
+.CopyrightEUpdates{
+    background-image: linear-gradient(to right,  rgba(230, 230, 230, 0.45), rgba(204, 204, 204, 0.35));
+    background-color: rgba(230, 230, 230, 0.5);
 }
