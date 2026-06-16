@@ -1,11 +1,10 @@
 /* Musiquinha Frutiger Aero :D*/
-
 let musica = document.getElementById("musica")
-let botao = document.getElementById("botaoMusica")
+let botao = document.getElementById("Musica")
 
 let tocando = false
 
-musica.volume = 0.2
+musica.volume = 0.3
 
 function musicaToggle(){
 
